@@ -4,8 +4,6 @@
 'use strict';
 
 
-// var FIFA = require('./fifa').FIFA;
-
 var USER = {username: 'admin', password: 'admin'};
 
 var app = require('./config/express')();
