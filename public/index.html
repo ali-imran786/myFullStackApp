@@ -1,14 +1,14 @@
 <!-- Written by Ali Imran -->
 <html>
 <head>
-  <title>My DVD Collection</title>
+  <title>Now Playing</title>
   <link rel="stylesheet" href="styles/bootstrap.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-app="myApp" class="landing">
   <div class="top-bar" ng-controller="myAppCtrl as myctrl">
     <div class="pull-left">
-      <span><a href="#/">DVD List</a></span>
+      <span><a href="#/">Movies Playing</a></span>
     </div>
     <div class="pull-right">
       <span ng-hide="myctrl.isLoggedIn">
@@ -19,14 +19,19 @@
         <a href="/api/logout">Logout</a>
       </span>
     </div>
-    <div show-html2 name="Kirk">
-        {{sayHello("cvvb")}}
-    </div>
+
+
   </div>
 
-  <div show-html></div><hr>
+  <div show-html></div>
+
+  <div show-html2 name="Kirk">
+      {{sayHello("cvvb")}}
+  </div>
 
   <div ng-view></div>
+
+
 
   <script src="scripts/vendors/jquery-1.11.1.js"></script>
   <script src="scripts/vendors/angular.js"></script>

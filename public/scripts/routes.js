@@ -2,17 +2,17 @@
 angular.module('myApp').config(['$routeProvider', function($routeProvider) {
 
     $routeProvider.when('/', {
-      templateUrl: 'views/films.html',
+      templateUrl: 'views/movies.html',
       // controller: 'TeamListCtrl as teamListCtrl'
     })
 
     .when('/live_gps_updates', {
       templateUrl: 'views/live_gps_updates.html'
     })
-    /*
+
     .when('/login', {
-      templateUrl: 'views/login.html'
-    })
+      template: 'views/login.html'
+    })/*
     .when('/team/:code', {
       templateUrl: 'views/team_details.html',
       controller:'TeamDetailsCtrl as teamDetailsCtrl',

@@ -1,9 +1,9 @@
 
-<div ng-controller="filmController as fctrl">
+<div ng-controller="movieController as fctrl">
 
 
 
-<div class="card login-card">
+<!--<div class="card login-card"> -->
 
 
 <div class="login-container">
@@ -16,18 +16,18 @@
 
 
 
-  <form name="loginForm"  ng-submit="fctrl.submit()" class="form-horizontal" role="form" style="border: 0px solid #73AD21;">
+  <form name="loginForm" ng-submit="fctrl.submit()" class="form-horizontal" role="form" style="border: 0px solid #73AD21;">
 
 
     <div class="form-group">
-        <label>Films Available</label>
-        <select required class="form-control" ng-model="fctrl.film.selectedFilmId" ng-options="film.Id as film.film_name for film in fctrl.FILM_List" ng-click="console.log(fctrl.film.selectedFilmId);">
+        <label>movies Available</label>
+        <select required class="form-control" ng-model="fctrl.movie.selectedMovieId" ng-options="movie.Id as movie.movie_name for movie in fctrl.MOVIE_List" ng-click="console.log(fctrl.movie.selectedMovieId);">
             <option value="">-- No Selection --</option>
         </select>
     </div>
 
     <div class="form-group" style="margin: auto; width: 100%; border: 0px solid #53AD21; padding: 0px;">
-        <span ng-show="fctrl.film.selectedFilmId" style="float:left; width:100%; margin:0 0%;">
+        <span ng-show="fctrl.movie.selectedMovieId" style="float:left; width:100%; margin:0 0%;">
             Now Playing At:
 
             <iframe
@@ -43,36 +43,36 @@
     <hr>
 
     <div class="form-group">
-        <label>Add New Film</label>
-        <input type="checkbox" ng-click="fctrl.blnAddNewFilm=!fctrl.blnAddNewFilm">
+        <label>Add New Movie</label>
+        <input type="checkbox" ng-click="fctrl.blnAddNewMovie=!fctrl.blnAddNewMovie">
     </div>
 
-        {{fctrl.blnAddNewFilm}}
+        {{fctrl.blnAddNewMovie}}
 
-    <span ng-show="fctrl.blnAddNewFilm">
+    <span ng-show="fctrl.blnAddNewMovie">
         <div class="form-group">
-            <label>Film Title</label>
-            <input type="text" class="form-control" ng-model="fctrl.film.title" required>
+            <label>Movie Title</label>
+            <input type="text" class="form-control" ng-model="fctrl.movie.title" required>
         </div>
 
         <div class="form-group">
             <label>Release Year</label>
-            <input type="text" class="form-control" ng-model="fctrl.film.year" required>
+            <input type="text" class="form-control" ng-model="fctrl.movie.year" required>
         </div>
 
         <div class="form-group">
             <label>Director</label>
-            <input type="text" class="form-control" ng-model="fctrl.film.director" required>
+            <input type="text" class="form-control" ng-model="fctrl.movie.director" required>
         </div>
 
         <div class="form-group">
             <label>Cast</label>
-            <input type="text" class="form-control" ng-model="fctrl.film.cast" required>
+            <input type="text" class="form-control" ng-model="fctrl.movie.cast" required>
         </div>
 
         <div class="form-group">
             <label>Genre</label>
-            <input type="text" class="form-control" ng-model="fctrl.film.genre" required>
+            <input type="text" class="form-control" ng-model="fctrl.movie.genre" required>
         </div>
 
         <div class="form-group">
@@ -88,5 +88,5 @@
 </div>
 
 </div>
-</div>
+<!--</div> -->
 </div>
