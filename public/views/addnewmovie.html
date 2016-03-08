@@ -1,0 +1,39 @@
+<div ng-controller="movieController as fctrl">
+
+<div class="login-container">
+<div class="login-form">
+
+<form name="loginForm" ng-submit="fctrl.submit()" class="form-horizontal" role="form" style="border: 0px solid #73AD21;">
+<div class="form-group">
+    <label>Movie Title</label>
+    <input type="text" class="form-control" ng-model="fctrl.movie.title" required>
+</div>
+
+<div class="form-group">
+    <label>Release Year</label>
+    <input type="text" class="form-control" ng-model="fctrl.movie.year" required>
+</div>
+
+<div class="form-group">
+    <label>Director</label>
+    <input type="text" class="form-control" ng-model="fctrl.movie.director" required>
+</div>
+
+<div class="form-group">
+    <label>Cast</label>
+    <input type="text" class="form-control" ng-model="fctrl.movie.cast" required>
+</div>
+
+<div class="form-group">
+    <label>Genre</label>
+    <input type="text" class="form-control" ng-model="fctrl.movie.genre" required>
+</div>
+
+<div class="form-group">
+    <label>Submit</label>
+    <input type="submit" value="Submit" class="form-control" ng-disabled="loginForm.$invalid">
+</div>
+</form>
+</div>
+</div>
+</div>

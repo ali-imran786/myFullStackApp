@@ -31,7 +31,7 @@ module.exports = function(app){
       });
 
 
-      app.post('/api/addfilm', function(req, res, next) {
+      app.post('/api/addmovie', function(req, res, next) {
 
         return res.send(req.body);
 

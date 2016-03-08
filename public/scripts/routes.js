@@ -6,8 +6,8 @@ angular.module('myApp').config(['$routeProvider', function($routeProvider) {
       // controller: 'TeamListCtrl as teamListCtrl'
     })
 
-    .when('/live_gps_updates', {
-      templateUrl: 'views/live_gps_updates.html'
+    .when('/addnewmovie', {
+      templateUrl: 'views/addnewmovie.html'
     })
 
     .when('/login', {

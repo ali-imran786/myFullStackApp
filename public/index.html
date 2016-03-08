@@ -11,7 +11,8 @@
       <span><a href="#/">Movies Playing</a></span>
     </div>
     <div class="pull-right">
-      <span ng-hide="myctrl.isLoggedIn">
+      <a href="#/addnewmovie">Add Movie</a>
+      <span ng-hide="!myctrl.isLoggedIn">
         <a href="#/login">Login</a>
       </span>
       <span ng-show="myctrl.isLoggedIn">
@@ -23,11 +24,14 @@
 
   </div>
 
+<!--
   <div show-html></div>
 
   <div show-html2 name="Kirk">
-      {{sayHello("cvvb")}}
+
   </div>
+-->
+
 
   <div ng-view></div>
 

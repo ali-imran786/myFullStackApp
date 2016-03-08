@@ -11,7 +11,7 @@ var USER = {username: 'admin', password: 'admin'};
 var app = require('./config/express')();
 var passport = require('./config/passport')(USER);
 
-  var port = process.env.PORT || 80;
+  var port = process.env.PORT || 7000;
 
 app.listen(port);
 

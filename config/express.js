@@ -47,7 +47,7 @@ module.exports = function() {
       // app.use('/', serverStatic(__dirname + '/app'));
       // app.use(express.static('../app'));
 
-
+      app.use(express.static('public'));
 
       //Load the routing files
       require('../app/routes/login.server.routes')(app); //#q1
