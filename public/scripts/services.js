@@ -20,11 +20,11 @@ angular.module('myApp')
               "gps"  : getTrustedURL("31.47566081585371,74.40432921051979")
             },
             {
-              "name" : "Cine Star Imax" ,
+              "name" : "Cine Star Imax",
               "gps"  : getTrustedURL("31.450609,74.310974")
             },
             {
-              "name" : "Crown Cinema Hall" ,
+              "name" : "Crown Cinema Hall",
               "gps"  : getTrustedURL("31.562953,74.345075")
             },
             {
@@ -47,12 +47,10 @@ angular.module('myApp')
               "name" : "Cine Star - Taj Cinema" ,
               "gps"  : getTrustedURL("31.563270,74.345027")
             }
-
-
         ];
 
           return [
-                    {"Id" : 0, "movie_name" : "--- No Selection ---",
+                    {"Id" : 0, "movie_name" : "<-- No Selection -->",
                       "cinema_name": Cinema[0].name, "cinema_gps" : Cinema[0].gps},
                     {"Id" : 1, "movie_name" : "The Martian",
                       "cinema_name": Cinema[1].name, "cinema_gps" : Cinema[1].gps},

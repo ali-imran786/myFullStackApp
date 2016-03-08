@@ -34,10 +34,7 @@ angular.module('myApp')
           // self.test = myMovieService.testObject;
           // self.test2 = myMovieService.testObject2;
 
-          self.blnAddNewMovie = false;
-
-
-
+          
 
         }
 
