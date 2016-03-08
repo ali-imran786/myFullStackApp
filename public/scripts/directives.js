@@ -8,14 +8,14 @@ app.directive('showHtml', [
         };
     }]);
 
-app.directive('showHtml2', ['myFilmService',
-    function(myFilmService){
+app.directive('showHtml2', ['myMovieService',
+    function(myMovieService){
         return{
           // templateUrl: '../views/dirtv.html',
           // template: "hello there -> {{myctrl.name}}",
           link: function($scope, $element, $attrs) {
             $scope.sayHello = function(name) {
-              return 'Hello ' + myFilmService.name;
+              return 'Hello ' + myMovieService.name;
             };
           }
 

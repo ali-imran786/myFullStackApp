@@ -20,21 +20,30 @@
 
 
     <div class="form-group">
-        <label>movies Available</label>
+        <label>Movies and Movie Theaters</label>
         <select required class="form-control" ng-model="fctrl.movie.selectedMovieId" ng-options="movie.Id as movie.movie_name for movie in fctrl.MOVIE_List" ng-click="console.log(fctrl.movie.selectedMovieId);">
-            <option value="">-- No Selection --</option>
+            <!-- <option value="">-- No Selection --</option> -->
         </select>
     </div>
 
     <div class="form-group" style="margin: auto; width: 100%; border: 0px solid #53AD21; padding: 0px;">
+
+
+
         <span ng-show="fctrl.movie.selectedMovieId" style="float:left; width:100%; margin:0 0%;">
-            Now Playing At:
+            Now Playing At: {{fctrl.MOVIE_List[fctrl.movie.selectedMovieId].cinema_name}}
 
             <iframe
+
+                id="cinema_map"
                 width="100%"
                 height="450"
-                frameborder="0" style="border:0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA5Lw5VNLbj1TMCxXBgM-EBEuGJM_6HpBo&q=31.45004,74.30029" allowfullscreen>
+                frameborder="1" style="border:0"
+                ng-src="{{fctrl.MOVIE_List[fctrl.movie.selectedMovieId].cinema_gps}}" allowfullscreen
+            >
+
+
+
               </iframe>
 
         </span>
